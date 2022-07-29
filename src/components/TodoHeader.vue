@@ -32,7 +32,9 @@ export default {
       if (this.inputValue.trim().length === 0) return this.inputValue = ""
       let res = this.$store.state.todoList.list
 
-      let id = this.list[res.length - 1].id + 1
+      let id = this.list.length === 0 
+      ? 1
+      : this.list[res.length - 1].id + 1
 
       const newObj = {
         id,

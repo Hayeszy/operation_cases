@@ -6,7 +6,10 @@
       <todo-main></todo-main>
       <todo-footer></todo-footer>
     </div>
-    <button title="按钮"></button>
+    <my-button>默认按钮</my-button>
+    <my-button type="danger">红色按钮</my-button>
+    <my-button type="success">绿色按钮</my-button>
+    <my-button type="primary">蓝色按钮</my-button>
   </div>
 </template>
 
@@ -14,6 +17,7 @@
 import TodoFooter from './components/TodoFooter.vue' // shift + alt + 下
 import TodoHeader from './components/TodoHeader.vue' // shift + alt + 下
 import TodoMain from './components/TodoMain.vue' // shift + alt + 下
+import MyButton from './components/Button'
 export default {
   data () {
     return {}
@@ -23,6 +27,7 @@ export default {
     TodoFooter,
     TodoHeader,
     TodoMain,
+    MyButton,
   },
 
   created () { },
